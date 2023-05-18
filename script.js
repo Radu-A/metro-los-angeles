@@ -4,7 +4,7 @@ const ATTRIBUTION =
   'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
 // Este token será el que obtengamos en la web de Mapbox
 const ACCESS_TOKEN =
-  'pk.eyJ1IjoicmFkdS1hIiwiYSI6ImNsaHM2aXVoNDJpZmEzbG9kYmVzc24yeTEifQ.g7HhKn-rVtWYe8DMCpctlg';
+  'pk.eyJ1IjoiY2Nhc3RpbGxvMDZtYiIsImEiOiJja2k1eXpybXU3em1mMnRsNjNqajJ0YW12In0.aFQJlFDBDQeUpLHT4EiRYg';
 
 
 
@@ -78,7 +78,6 @@ function printMarker() {
             myLayer = L.layerGroup(markerAll).addTo(map2);
             // añado popup al evento click
             marker.addEventListener("click", function() {
-                console.log("holi")
                 var popup = L.popup()
                     .setLatLng([latitude, longitude])
                     .setContent(id)
